@@ -1,0 +1,85 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "location": {
+            "value": "westindia"
+        },
+        "networkInterfaceName": {
+            "value": "azdevtnsapp03620"
+        },
+        "enableAcceleratedNetworking": {
+            "value": true
+        },
+        "networkSecurityGroupId": {
+            "value": "/subscriptions/8d850d99-0f78-45e8-bb9a-4ec5e98eafbf/resourceGroups/SaviantTNS3.0/providers/Microsoft.Network/networkSecurityGroups/savtns30vm01-nsg"
+        },
+        "subnetName": {
+            "value": "default"
+        },
+        "virtualNetworkId": {
+            "value": "/subscriptions/8d850d99-0f78-45e8-bb9a-4ec5e98eafbf/resourceGroups/SaviantTNS3.0/providers/Microsoft.Network/virtualNetworks/SaviantTNS3.0-vnet"
+        },
+        "publicIpAddressName": {
+            "value": "AZDEVTNSAPP03-ip"
+        },
+        "publicIpAddressType": {
+            "value": "Dynamic"
+        },
+        "publicIpAddressSku": {
+            "value": "Basic"
+        },
+        "virtualMachineName": {
+            "value": "AZDEVTNSAPP03"
+        },
+        "virtualMachineRG": {
+            "value": "Shakti-Dev-RG"
+        },
+        "osDiskType": {
+            "value": "Premium_LRS"
+        },
+        "dataDisks": {
+            "value": [
+                {
+                    "lun": 0,
+                    "createOption": "attach",
+                    "caching": "ReadWrite",
+                    "writeAcceleratorEnabled": false,
+                    "id": null,
+                    "name": "AZDEVTNSAPP03_DataDisk_0",
+                    "storageAccountType": null,
+                    "diskSizeGB": null
+                }
+            ]
+        },
+        "dataDiskResources": {
+            "value": [
+                {
+                    "name": "AZDEVTNSAPP03_DataDisk_0",
+                    "sku": "Premium_LRS",
+                    "properties": {
+                        "diskSizeGB": 256,
+                        "creationData": {
+                            "createOption": "empty"
+                        }
+                    }
+                }
+            ]
+        },
+        "virtualMachineSize": {
+            "value": "Standard_DS2_v2"
+        },
+        "adminUsername": {
+            "value": "vteam"
+        },
+        "adminPassword": {
+            "value": null
+        },
+        "diagnosticsStorageAccountName": {
+            "value": "shaktidevrgdiag"
+        },
+        "diagnosticsStorageAccountId": {
+            "value": "/subscriptions/8d850d99-0f78-45e8-bb9a-4ec5e98eafbf/resourceGroups/Shakti-Dev-RG/providers/Microsoft.Storage/storageAccounts/shaktidevrgdiag"
+        }
+    }
+}

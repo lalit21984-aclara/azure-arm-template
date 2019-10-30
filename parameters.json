@@ -6,7 +6,7 @@
             "value": "westindia"
         },
         "networkInterfaceName": {
-            "value": "azdevtnsapp03620"
+            "value": "azqatnsapp03620"
         },
         "enableAcceleratedNetworking": {
             "value": true
@@ -21,7 +21,7 @@
             "value": "/subscriptions/8d850d99-0f78-45e8-bb9a-4ec5e98eafbf/resourceGroups/SaviantTNS3.0/providers/Microsoft.Network/virtualNetworks/SaviantTNS3.0-vnet"
         },
         "publicIpAddressName": {
-            "value": "AZDEVTNSAPP03-ip"
+            "value": "AZQATNSAPP03-ip"
         },
         "publicIpAddressType": {
             "value": "Dynamic"
@@ -30,7 +30,7 @@
             "value": "Basic"
         },
         "virtualMachineName": {
-            "value": "AZDEVTNSAPP03"
+            "value": "AZQATNSAPP03"
         },
         "virtualMachineRG": {
             "value": "Shakti-Dev-RG"
@@ -46,7 +46,7 @@
                     "caching": "ReadWrite",
                     "writeAcceleratorEnabled": false,
                     "id": null,
-                    "name": "AZDEVTNSAPP03_DataDisk_0",
+                    "name": "AZQATNSAPP03_DataDisk_0",
                     "storageAccountType": null,
                     "diskSizeGB": null
                 }
@@ -55,7 +55,7 @@
         "dataDiskResources": {
             "value": [
                 {
-                    "name": "AZDEVTNSAPP03_DataDisk_0",
+                    "name": "AZQATNSAPP03_DataDisk_0",
                     "sku": "Premium_LRS",
                     "properties": {
                         "diskSizeGB": 256,
